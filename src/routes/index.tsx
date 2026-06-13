@@ -1,6 +1,15 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
+import { seo } from '../utils/seo'
 
-export const Route = createFileRoute('/')({ component: Home })
+export const Route = createFileRoute('/')({
+  head: () =>
+    seo({
+      title: 'Christopher Gascoyne — Voice Actor & Narrator',
+      description:
+        'Voice actor and narrator with a background in classical voice and opera. Audiobooks, character work, commercials, and corporate narration recorded to professional studio quality.',
+    }),
+  component: Home,
+})
 
 const GENRES = [
   'Audiobooks',
@@ -42,8 +51,10 @@ function Home() {
             <div className="h-full w-full overflow-hidden rounded-full" style={{ background: 'var(--surface-strong)' }}>
               <img
                 src="/photos/VA-headshot-800x800.webp"
-                alt="Profile photo"
+                alt="Christopher Gascoyne, voice actor"
                 className="h-full w-full object-cover"
+                width={800}
+                height={800}
               />
             </div>
           </div>

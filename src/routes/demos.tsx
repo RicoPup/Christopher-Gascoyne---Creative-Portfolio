@@ -1,7 +1,17 @@
 import { createFileRoute } from '@tanstack/react-router'
 import React, { useState } from 'react'
+import { seo } from '../utils/seo'
 
-export const Route = createFileRoute('/demos')({ component: Demos })
+export const Route = createFileRoute('/demos')({
+  head: () =>
+    seo({
+      title: 'Demos — Christopher Gascoyne',
+      description:
+        'Listen to voice acting and narration demos from Christopher Gascoyne, including audiobook performances and vocal work across a range of characters and genres.',
+      path: '/demos',
+    }),
+  component: Demos,
+})
 
 interface Character {
   name: string
@@ -184,7 +194,7 @@ function Demos() {
 
       {/* ── Tabs ─────────────────────────────────────────────────────── */}
       <div
-        className="rise-in mb-8 flex flex-wrap gap-1 rounded-xl border p-1 w-fit"
+        className="rise-in mb-8 flex gap-1 rounded-xl border p-1 w-full sm:w-fit"
         style={{
           borderColor: 'var(--line)',
           background: 'var(--surface)',
@@ -196,7 +206,7 @@ function Demos() {
             key={tab.genre}
             type="button"
             onClick={() => setActiveGenre(tab.genre)}
-            className="rounded-lg px-5 py-2 text-sm font-semibold transition"
+            className="flex-1 sm:flex-none whitespace-nowrap rounded-lg px-2 py-2 text-xs sm:px-5 sm:text-sm font-semibold transition text-center"
             style={
               activeGenre === tab.genre
                 ? {

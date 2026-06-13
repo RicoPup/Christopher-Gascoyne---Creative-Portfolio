@@ -32,10 +32,10 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Center: logo — absolutely centered so it's always in the middle */}
+        {/* Center: logo — hidden on mobile where nav links don't have room */}
         <Link
           to="/"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden sm:block"
           aria-label="Home"
         >
           <img

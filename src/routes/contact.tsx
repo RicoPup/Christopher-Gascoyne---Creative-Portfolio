@@ -1,8 +1,18 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useRef, useState, type FormEvent } from 'react'
 import HCaptcha from '@hcaptcha/react-hcaptcha'
+import { seo } from '../utils/seo'
 
-export const Route = createFileRoute('/contact')({ component: Contact })
+export const Route = createFileRoute('/contact')({
+  head: () =>
+    seo({
+      title: 'Contact — Christopher Gascoyne',
+      description:
+        'Get in touch with voice actor Christopher Gascoyne for audiobook, commercial, and narration work, or to enquire about a portfolio website.',
+      path: '/contact',
+    }),
+  component: Contact,
+})
 
 const WEB3FORMS_KEY = 'c0516a0c-8cfa-4103-8b02-ef18b7d1c2aa'
 const HCAPTCHA_SITE_KEY = '50b2fe65-b00b-4b9e-ad62-3ba471098be2'
