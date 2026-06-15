@@ -4,7 +4,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import { Analytics } from '@vercel/analytics/react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '../utils/seo'
+import { DEFAULT_DESCRIPTION, PROFILE_IMAGE, SITE_NAME, SITE_URL } from '../utils/seo'
 
 import appCss from '../styles.css?url'
 
@@ -17,7 +17,7 @@ const PERSON_JSONLD = JSON.stringify({
   jobTitle: 'Voice Actor',
   description: DEFAULT_DESCRIPTION,
   url: SITE_URL,
-  image: DEFAULT_OG_IMAGE,
+  image: PROFILE_IMAGE,
   alumniOf: {
     '@type': 'CollegeOrUniversity',
     name: 'Royal Northern College of Music',
@@ -60,7 +60,13 @@ export const Route = createRootRoute({
       },
       {
         rel: 'icon',
+        href: '/favicon.ico',
+        sizes: 'any',
+      },
+      {
+        rel: 'icon',
         type: 'image/png',
+        sizes: '192x192',
         href: '/logos/goldendog-logo-192x192.png',
       },
       {
