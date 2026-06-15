@@ -1,5 +1,4 @@
 import { Link } from '@tanstack/react-router'
-import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
   return (
@@ -32,10 +31,10 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Center: logo — hidden on mobile where nav links don't have room */}
+        {/* Logo — right-aligned on mobile, centered on larger screens */}
         <Link
           to="/"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden sm:block"
+          className="block sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2"
           aria-label="Home"
         >
           <img
@@ -45,11 +44,6 @@ export default function Header() {
             style={{ filter: 'drop-shadow(0 2px 6px rgba(201,168,76,0.35))' }}
           />
         </Link>
-
-        {/* Right: theme toggle */}
-        <div className="flex items-center">
-          <ThemeToggle />
-        </div>
 
       </nav>
     </header>

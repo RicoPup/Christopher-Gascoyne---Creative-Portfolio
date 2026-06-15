@@ -63,7 +63,7 @@ function Home() {
         <p className="island-kicker mb-4">Voice Actor</p>
 
         <h1
-          className="display-title mb-6 text-5xl sm:text-7xl"
+          className="display-title mb-6 text-balance text-4xl sm:text-7xl"
           style={{ color: 'var(--sea-ink)' }}
         >
           Christopher Gascoyne

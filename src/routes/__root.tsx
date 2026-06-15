@@ -8,8 +8,6 @@ import { DEFAULT_DESCRIPTION, PROFILE_IMAGE, SITE_NAME, SITE_URL } from '../util
 
 import appCss from '../styles.css?url'
 
-const THEME_INIT_SCRIPT = `(function(){try{var stored=window.localStorage.getItem('theme');var mode=(stored==='light'||stored==='dark')?stored:'dark';var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(mode);root.setAttribute('data-theme',mode);root.style.colorScheme=mode;}catch(e){}})();`
-
 const PERSON_JSONLD = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -86,7 +84,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: PERSON_JSONLD }} />
         <HeadContent />
       </head>
