@@ -55,6 +55,13 @@ const DEMOS: Demo[] = [
     source: 'Hazbin Hotel — Sam Haft / Andrew Underberg',
   },
   {
+    title: 'Live To Live — Vocal Excerpt',
+    description: <>A short vocal excerpt from <em>Live To Live</em> from <em>Hazbin Hotel</em> Season 2, originally performed by Alex Brightman and Patina Miller. This sample showcases character singing, musical-theatre phrasing, and a brighter comic-dramatic vocal style.</>,
+    file: 'vocal performance/live to live intro - hazbin hotel.mp3',
+    genre: 'Vocal Performance',
+    source: 'Hazbin Hotel — Sam Haft / Andrew Underberg',
+  },
+  {
     title: 'The Blade Itself — Glokta & Frost',
     description: <>An excerpt from <em>The Blade Itself</em> by Joe Abercrombie. A scene featuring two of <em>the First Law</em>'s most distinct voices — a crippled inquisitor whose inner self-image is in constant dark conflict with his broken body, and his silent, stoic partner.</>,
     file: 'audiobooks/Glokta [2] - The First Law excerpt - Joe Abercrombie.mp3',
@@ -115,7 +122,7 @@ const DEMOS: Demo[] = [
     file: 'vocal performance/Come Away Death - Quilter - 3 Shakespeare Songs.mp3',
     genre: 'Vocal Performance',
     source: 'Three Shakespeare Songs, Op. 6 — Roger Quilter / text: Shakespeare',
-    disclaimer: 'This is an older, unmastered recording. Cleaner studio recordings are coming soon.',
+    disclaimer: 'This is an older, unmastered recording.',
   },
   {
     title: 'Solarport — Renewable Energy',
