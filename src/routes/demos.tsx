@@ -31,6 +31,13 @@ interface Demo {
 
 const DEMOS: Demo[] = [
   {
+    title: 'Love in a Bottle — Vocal Excerpt',
+    description: <>A short vocal excerpt from <em>Love in a Bottle</em> from <em>Hazbin Hotel</em>, showcasing a darker musical-theatre style with characterful delivery, low baritone colour, and dramatic vocal expression.</>,
+    file: 'vocal performance/love in a bottle intro - hazbin hotel.mp3',
+    genre: 'Vocal Performance',
+    source: 'Hazbin Hotel — Sam Haft / Andrew Underberg',
+  },
+  {
     title: 'Shadows Upon Time — Hadrian & Selene',
     description: <>An excerpt from Chapter 30 of <em>Shadows Upon Time</em> by Christopher Ruocchio. A dramatic scene between two central characters.</>,
     file: 'Shadows Upon Time [2] - C30 Excerpt - Hadrian and Selene.mp3',
