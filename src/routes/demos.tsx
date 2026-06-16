@@ -112,7 +112,7 @@ const DEMOS: Demo[] = [
   {
     title: 'Come Away, Death — Quilter',
     description: <>Roger Quilter's lyrical setting of Shakespeare's "Come Away, Death" from <em>Twelfth Night</em>, the opening song of his <em>Three Shakespeare Songs</em>, Op. 6.</>,
-    file: 'vocal performance/Come Away Death - Quilter -3 Shakespeare Songs.mp3',
+    file: 'vocal performance/Come Away Death - Quilter - 3 Shakespeare Songs.mp3',
     genre: 'Vocal Performance',
     source: 'Three Shakespeare Songs, Op. 6 — Roger Quilter / text: Shakespeare',
     disclaimer: 'This is an older, unmastered recording. Cleaner studio recordings are coming soon.',
